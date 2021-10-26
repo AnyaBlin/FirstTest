@@ -22,9 +22,9 @@ public class TestingForm {
         $("#firstName").setValue("Ann");
         $("#lastName").setValue("Blini");
         $("#userEmail").setValue("blinchiki@smetana.ru");
-        //$("#custom-control-input").;
-        $(By.name("gender")).setValue("Male");
+        $(By.className("custom-control-label")).click();
         $("#userNumber").setValue("88005553535");
+        $(By.className("css-2b097c-container")).setValue("some smetanka");
 
 
         $("#submit").click();
