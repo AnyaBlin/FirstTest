@@ -9,6 +9,7 @@ import org.openqa.selenium.By;
 
 import java.io.File;
 
+import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
 public class TestingForm {
@@ -36,7 +37,7 @@ public class TestingForm {
         $("#currentAddress").setValue("Some address");
         $(By.id("react-select-3-input")).setValue("Haryana").pressEnter();
         $(By.id("react-select-4-input")).setValue("Karnal").pressEnter();
-        $("#submit").click();
+        $(byText("Submit")).click();
 
 
     }
